@@ -1,0 +1,661 @@
+<!doctype html><html lang="ru"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0a0a0b">
+<title>ION ENERGY — ION Invest</title><link rel="icon" href="assets/ion-logo.png">
+<style>
+:root{--bg:#09090a;--card:#141417;--card2:#1a1a1e;--line:#2b2b31;--text:#f6f6f3;--muted:#aaaab0;--accent:#f4f4f2;--accent2:#cfcfd3;--soft:rgba(255,255,255,.07);--max:1240px;--shadow:0 24px 70px rgba(0,0,0,.35)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(900px 500px at 10% -10%,rgba(255,255,255,.08),transparent 62%),radial-gradient(1000px 600px at 90% 5%,rgba(255,255,255,.04),transparent 60%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.62}a{color:inherit;text-decoration:none}.wrap{max-width:var(--max);margin:0 auto;padding:0 26px}
+.topbar{position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(255,255,255,.07);backdrop-filter:blur(18px);background:rgba(9,9,10,.78)}.topbar-inner{height:74px;display:flex;align-items:center;gap:26px;max-width:var(--max);margin:auto;padding:0 26px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.04em;white-space:nowrap}.brand img{width:44px;height:44px;object-fit:contain;filter:drop-shadow(0 0 14px rgba(255,255,255,.18))}.brand small{display:block;font-size:10px;color:var(--muted);letter-spacing:.16em;font-weight:600}.nav{display:flex;gap:18px;overflow:auto;scrollbar-width:none;flex:1}.nav::-webkit-scrollbar{display:none}.nav a{font-size:13px;color:var(--muted);white-space:nowrap}.nav a:hover{color:#fff}.print{border:1px solid var(--line);background:var(--card);color:#fff;border-radius:12px;padding:9px 13px;cursor:pointer}
+.hero{padding:86px 0 70px}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}.hero-logo{width:110px;height:110px;margin-bottom:24px;filter:drop-shadow(0 0 28px rgba(255,255,255,.20))}.kicker{color:var(--accent2);font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:800}h1{font-size:clamp(48px,7vw,88px);line-height:.96;margin:14px 0 22px;letter-spacing:-.055em}.hero p{font-size:20px;color:#c8c8cc;max-width:760px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:13px 18px;border-radius:14px;border:1px solid var(--line);background:var(--card);font-weight:700}.btn.primary{background:#f4f4f2;border-color:#f4f4f2;color:#0b0b0c}.hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.018));border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow)}.hero-card h3{font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.14em;margin:0 0 18px}.stack{display:grid;gap:10px}.stack div{padding:15px 16px;border:1px solid var(--line);background:#101012;border-radius:14px;display:flex;justify-content:space-between;gap:12px}.stack b{font-size:14px}.stack span{font-size:12px;color:var(--muted)}
+.manifesto{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 0;background:rgba(255,255,255,.015)}.manifesto-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.metric{padding:20px;border-left:2px solid var(--accent)}.metric b{display:block;font-size:16px}.metric span{font-size:13px;color:var(--muted)}
+.toc{padding:48px 0 10px}.toc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.toc a{border:1px solid var(--line);background:var(--card);padding:14px 16px;border-radius:14px;color:#d9d9dd;font-size:14px;transition:.2s}.toc a:hover{border-color:rgba(255,255,255,.34);transform:translateY(-1px)}
+.section{padding:76px 0;border-bottom:1px solid rgba(255,255,255,.07);scroll-margin-top:88px}.section-head{display:grid;grid-template-columns:180px 1fr;gap:26px;align-items:start;margin-bottom:34px}.eyebrow{font-size:11px;letter-spacing:.17em;color:var(--accent2);font-weight:800;padding-top:10px}h2{font-size:clamp(34px,4.6vw,58px);line-height:1.05;letter-spacing:-.045em;margin:0}.prose{max-width:980px;margin-left:206px;color:#d2d2d6}.prose h2,.prose h3,.prose h4{color:#fff;letter-spacing:-.025em;line-height:1.2}.prose h2{font-size:34px;margin:46px 0 18px}.prose h3{font-size:25px;margin:36px 0 14px}.prose h4{font-size:18px;margin:26px 0 10px}.prose p{margin:12px 0 18px}.prose strong{color:#fff}.prose a{color:#ffffff;text-decoration:underline;text-underline-offset:3px}.prose blockquote{margin:28px 0;padding:22px 24px;border-left:3px solid var(--accent);background:var(--soft);border-radius:0 16px 16px 0;color:#fff;font-size:18px}.prose ul,.prose ol{padding-left:22px}.prose li{margin:6px 0}.prose code{background:#17171a;border:1px solid #29292e;border-radius:7px;padding:2px 6px;color:#f0f0f0}.prose pre:not(.mermaid){overflow:auto;background:#0e0e10;border:1px solid var(--line);padding:18px;border-radius:16px}
+table{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px;background:#101012;border:1px solid var(--line)}th,td{padding:13px 14px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}th{color:#fff;background:#17171a}td{color:#c8c8cd}
+.diagram-card{margin:30px 0;background:linear-gradient(180deg,#121214,#0e0e10);border:1px solid var(--line);border-radius:20px;padding:24px;overflow:auto}.mermaid{display:flex;justify-content:center;background:transparent!important}
+.graph-gallery{padding:76px 0;border-bottom:1px solid var(--line)}.graph-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.graph-item{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;min-width:0}.graph-item h3{margin:0 0 16px;font-size:18px}.ops-wrap{padding:76px 0}details.ops{border:1px solid var(--line);background:var(--card);border-radius:15px;margin:10px 0;padding:0 18px}details.ops summary{cursor:pointer;padding:16px 0;font-weight:700}.compact{margin:0 0 18px;max-width:none}.footer{border-top:1px solid var(--line);padding:36px 0 54px;color:var(--muted);font-size:13px}.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer img{width:54px}.reveal{opacity:0;transform:translateY(14px);transition:.6s ease}.reveal.on{opacity:1;transform:none}
+
+.explain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 34px}
+.explain{background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:18px;padding:18px 18px 16px}
+.explain b{display:block;color:#fff;font-size:15px;margin-bottom:8px}
+.explain p{font-size:14px;color:#bfc0c5;margin:0;line-height:1.55}
+.prose>p{max-width:860px}
+.prose li{max-width:880px}
+
+.plain-language{padding:68px 0;border-bottom:1px solid rgba(255,255,255,.07);background:linear-gradient(180deg,rgba(255,255,255,.018),rgba(255,255,255,.006))}
+.plain-title{display:grid;grid-template-columns:180px 1fr;gap:26px;align-items:start;margin-bottom:28px}
+.plain-title h2{margin:0}
+.plain-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-left:206px}
+.plain-grid article{position:relative;border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.018));border-radius:20px;padding:22px}
+.plain-grid .num{display:inline-flex;width:34px;height:34px;border-radius:50%;align-items:center;justify-content:center;background:#f4f4f2;color:#0c0c0d;font-size:12px;font-weight:800;margin-bottom:14px}
+.plain-grid h3{margin:0 0 10px;font-size:19px}
+.plain-grid p{margin:0;color:#bfc0c5;font-size:14px;line-height:1.62}
+.plain-note{margin:0 0 34px;padding:24px 26px;border:1px solid rgba(255,255,255,.13);background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.018));border-radius:20px}
+.plain-note h3{margin:0 0 14px!important;font-size:22px!important}
+.plain-note p{margin:0 0 12px!important;color:#c9c9ce;max-width:none!important}
+.plain-note p:last-child{margin-bottom:0!important}
+@media(max-width:900px){.plain-title{grid-template-columns:1fr;gap:8px}.plain-grid{grid-template-columns:1fr;margin-left:0}}
+@media(max-width:900px){.explain-grid{grid-template-columns:1fr}}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.manifesto-grid{grid-template-columns:1fr 1fr}.toc-grid{grid-template-columns:1fr 1fr}.section-head{grid-template-columns:1fr;gap:8px}.prose{margin-left:0}.graph-grid{grid-template-columns:1fr}.nav{display:none}}@media(max-width:580px){.wrap,.topbar-inner{padding-left:16px;padding-right:16px}.hero{padding-top:56px}h1{font-size:49px}.hero p{font-size:17px}.manifesto-grid,.toc-grid{grid-template-columns:1fr}.section{padding:54px 0}.prose h2{font-size:28px}.brand small{display:none}.print{display:none}}
+@media print{body{background:white;color:#111}.topbar,.hero-actions,.toc{display:none!important}.hero,.section,.graph-gallery,.ops-wrap{padding:24px 0}.section{page-break-inside:avoid}.prose{margin-left:0;max-width:none;color:#222}.prose *{color:#111!important}.hero-card,.graph-item,.diagram-card,table{border-color:#bbb;background:#fff;box-shadow:none}h1,h2,h3,h4{color:#000!important}.footer{color:#444}}
+
+
+.print-static-diagram,
+.print-author-footer {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 16mm 14mm 20mm 14mm;
+  }
+
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  html,
+  body {
+    width: auto !important;
+    min-width: 0 !important;
+    background: #ffffff !important;
+    color: #111111 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    font-size: 10.3pt !important;
+    line-height: 1.48 !important;
+  }
+
+  .topbar,
+  .toc,
+  .hero-actions,
+  .print-actions,
+  .print {
+    display: none !important;
+  }
+
+  .wrap,
+  .topbar-inner {
+    width: 100% !important;
+    max-width: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Everything in the printed document is deliberately light. */
+  main,
+  section,
+  article,
+  aside,
+  div,
+  .hero,
+  .manifesto,
+  .plain-language,
+  .section,
+  .graph-gallery,
+  .ops-wrap,
+  .footer {
+    background-color: transparent !important;
+    background-image: none !important;
+  }
+
+  .hero {
+    padding: 0 0 9mm !important;
+    border-bottom: 0.4mm solid #111 !important;
+  }
+
+  .hero-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 6mm !important;
+  }
+
+  .hero-logo {
+    width: 34mm !important;
+    height: 34mm !important;
+    filter: none !important;
+    margin: 0 0 5mm !important;
+  }
+
+  .hero h1 {
+    color: #000 !important;
+    font-size: 31pt !important;
+    line-height: 0.98 !important;
+    margin: 2mm 0 5mm !important;
+  }
+
+  .hero p {
+    color: #111 !important;
+    font-size: 11pt !important;
+    line-height: 1.5 !important;
+    max-width: none !important;
+  }
+
+  .kicker,
+  .eyebrow {
+    color: #333 !important;
+  }
+
+  .hero-card,
+  .stack div,
+  .metric,
+  .plain-grid article,
+  .explain,
+  .plain-note,
+  details.ops {
+    background: #ffffff !important;
+    border: 0.3mm solid #9b9ba0 !important;
+    color: #111 !important;
+  }
+
+  .hero-card {
+    border-radius: 3mm !important;
+    padding: 5mm !important;
+    break-inside: avoid !important;
+  }
+
+  .hero-card h3,
+  .stack b,
+  .stack span,
+  .metric b,
+  .metric span,
+  .plain-grid h3,
+  .plain-grid p,
+  .explain b,
+  .explain p,
+  .plain-note h3,
+  .plain-note p {
+    color: #111 !important;
+  }
+
+  .stack {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 2.5mm !important;
+  }
+
+  .stack div {
+    border-radius: 2mm !important;
+    padding: 3mm !important;
+  }
+
+  .manifesto,
+  .plain-language {
+    padding: 7mm 0 !important;
+    border-bottom: 0.3mm solid #c5c5c8 !important;
+  }
+
+  .manifesto-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 3mm !important;
+  }
+
+  .metric {
+    border-left: 1mm solid #111 !important;
+    padding: 3.5mm !important;
+  }
+
+  .plain-title,
+  .section-head {
+    display: block !important;
+    margin-bottom: 5mm !important;
+    break-after: avoid-page !important;
+  }
+
+  .plain-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 3mm !important;
+    margin-left: 0 !important;
+  }
+
+  .plain-grid article,
+  .explain,
+  .plain-note {
+    border-radius: 2.5mm !important;
+    padding: 4mm !important;
+    break-inside: avoid !important;
+  }
+
+  .plain-grid .num {
+    background: #111 !important;
+    color: #fff !important;
+  }
+
+  .section {
+    padding: 9mm 0 !important;
+    border-bottom: 0.3mm solid #d0d0d3 !important;
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+  }
+
+  .section-head h2,
+  .plain-title h2,
+  h2 {
+    color: #000 !important;
+    font-size: 21pt !important;
+    line-height: 1.08 !important;
+  }
+
+  h3 {
+    color: #000 !important;
+    font-size: 14.5pt !important;
+  }
+
+  h4 {
+    color: #111 !important;
+    font-size: 11.5pt !important;
+  }
+
+  .prose,
+  .compact {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    color: #111 !important;
+  }
+
+  /* Readability first: no light-gray body copy in print. */
+  .prose p,
+  .prose li,
+  .prose strong,
+  .prose em,
+  .prose a,
+  .prose td,
+  .prose th,
+  .prose blockquote,
+  .prose summary,
+  .prose code {
+    color: #111 !important;
+  }
+
+  .prose a {
+    text-decoration: none !important;
+  }
+
+  .prose blockquote {
+    background: #f4f4f4 !important;
+    border-left: 1mm solid #111 !important;
+    border-radius: 0 2mm 2mm 0 !important;
+    padding: 4mm !important;
+    break-inside: avoid !important;
+  }
+
+  .prose pre:not(.mermaid),
+  .prose code {
+    background: #f5f5f5 !important;
+    border-color: #b9b9bd !important;
+    color: #111 !important;
+  }
+
+  .prose pre:not(.mermaid) {
+    white-space: pre-wrap !important;
+    overflow: visible !important;
+  }
+
+  table {
+    width: 100% !important;
+    background: #fff !important;
+    border: 0.3mm solid #888 !important;
+    font-size: 9pt !important;
+    break-inside: auto !important;
+  }
+
+  thead {
+    display: table-header-group !important;
+  }
+
+  th {
+    background: #ededed !important;
+    color: #000 !important;
+    font-weight: 700 !important;
+  }
+
+  td {
+    background: #fff !important;
+    color: #111 !important;
+  }
+
+  th,
+  td {
+    border-color: #b8b8bc !important;
+    padding: 2.5mm !important;
+  }
+
+  /* Mermaid remains on screen only. Print uses prepared light SVG files. */
+  .diagram-card {
+    display: none !important;
+  }
+
+  .print-static-diagram {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 5mm 0 6mm !important;
+    padding: 4mm !important;
+    background: #fff !important;
+    border: 0.3mm solid #a7a7ab !important;
+    border-radius: 2.5mm !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .print-static-diagram img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 205mm !important;
+    object-fit: contain !important;
+    margin: 0 auto !important;
+    filter: none !important;
+  }
+
+  .graph-gallery {
+    padding: 9mm 0 !important;
+  }
+
+  .graph-grid {
+    display: block !important;
+  }
+
+  .graph-item {
+    display: block !important;
+    width: 100% !important;
+    min-height: 0 !important;
+    margin: 0 0 7mm !important;
+    padding: 4mm !important;
+    background: #fff !important;
+    border: 0.3mm solid #aaa !important;
+    border-radius: 2.5mm !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .graph-item h3 {
+    color: #000 !important;
+    margin: 0 0 4mm !important;
+  }
+
+  .ops-wrap {
+    padding: 9mm 0 !important;
+  }
+
+  details.ops {
+    padding: 3mm 4mm !important;
+    margin: 0 0 3mm !important;
+    break-inside: avoid !important;
+  }
+
+  details.ops summary {
+    color: #000 !important;
+  }
+
+  .footer {
+    color: #222 !important;
+    padding: 8mm 0 0 !important;
+    border-top: 0.3mm solid #aaa !important;
+  }
+
+  .footer img {
+    filter: none !important;
+  }
+
+  /* Repeating bottom footer. It sits inside the reserved @page bottom margin. */
+  .print-author-footer {
+    display: block !important;
+    position: fixed !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: -13mm !important;
+    padding-top: 2.5mm !important;
+    border-top: 0.3mm solid #9b9ba0 !important;
+    background: #fff !important;
+    color: #222 !important;
+    font-size: 8.5pt !important;
+    line-height: 1.2 !important;
+    text-align: right !important;
+    z-index: 99999 !important;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  /* Keep headings with the first block that follows them. */
+  h2,
+  h3,
+  h4 {
+    break-after: avoid-page !important;
+  }
+
+  p,
+  li {
+    orphans: 3 !important;
+    widows: 3 !important;
+  }
+}
+
+
+@media print {
+  /* CRITICAL: never print animated elements in their pre-animation state. */
+  .reveal,
+  .reveal.on,
+  [class*="reveal"] {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    translate: none !important;
+    scale: 1 !important;
+    filter: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* Make sure no lazy/viewport rendering mechanism blanks printed content. */
+  main,
+  main *,
+  .section,
+  .section *,
+  .graph-gallery,
+  .graph-gallery *,
+  .ops-wrap,
+  .ops-wrap * {
+    content-visibility: visible !important;
+  }
+
+  /* Closed <details> elements otherwise print only their summary in many browsers. */
+  details.ops,
+  details.ops > *,
+  details[open],
+  details[open] > * {
+    visibility: visible !important;
+  }
+
+  details.ops > :not(summary) {
+    display: block !important;
+  }
+
+  /* Avoid giant blank pages created by inherited min-heights / viewport heights. */
+  .section,
+  .graph-item,
+  .hero,
+  .hero-grid,
+  .plain-language,
+  .plain-grid,
+  .ops-wrap,
+  .graph-gallery {
+    min-height: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+
+  /* Keep ordinary content flowing naturally from page to page. */
+  .section,
+  .prose,
+  .plain-language,
+  .ops-wrap {
+    break-before: auto !important;
+    page-break-before: auto !important;
+    break-after: auto !important;
+    page-break-after: auto !important;
+  }
+
+  /* Only diagrams/cards that can realistically fit should avoid splitting. */
+  .print-static-diagram,
+  .plain-note,
+  .explain,
+  .plain-grid article {
+    break-inside: avoid-page !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Footer is visible and readable. */
+  .print-author-footer {
+    opacity: 1 !important;
+    visibility: visible !important;
+    color: #111 !important;
+    background: #fff !important;
+  }
+}
+
+
+.page-nav{display:flex;align-items:center;gap:6px;margin-left:auto;padding:4px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.025)}
+.page-nav a{padding:8px 12px;border-radius:10px;color:var(--muted);font-size:13px;font-weight:750;white-space:nowrap}
+.page-nav a:hover{color:#fff;background:rgba(255,255,255,.05)}
+.page-nav a.active{background:#f4f4f2;color:#0b0b0c}
+.project-pages{padding:22px 0 56px}
+.project-page-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.project-page-card{position:relative;min-height:230px;padding:24px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.018));border-radius:24px;transition:.2s ease}
+.project-page-card:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.32)}
+.project-page-card .num{color:var(--muted);font-size:11px;letter-spacing:.16em;font-weight:800}
+.project-page-card h3{font-size:26px;line-height:1.05;margin:36px 0 12px}
+.project-page-card p{color:#bdbdc2;font-size:14px;margin:0 0 22px}
+.project-page-card .arrow{position:absolute;right:22px;bottom:20px;font-size:22px}
+@media(max-width:900px){.page-nav{margin-left:0;overflow:auto;max-width:60vw}.project-page-grid{grid-template-columns:1fr}}
+@media(max-width:680px){.topbar-inner{gap:10px}.page-nav{max-width:calc(100vw - 145px)}.page-nav a{padding:8px 10px}}
+@media print{.page-nav,.project-pages{display:none!important}}
+</style><style>
+.detail-hero{padding:82px 0 54px;border-bottom:1px solid var(--line)}
+.detail-hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:46px;align-items:end}
+.detail-hero h1{font-size:clamp(52px,7vw,90px);margin:12px 0 20px}
+.detail-hero p{font-size:19px;color:#c8c8cc;max-width:820px}
+.detail-badge{display:inline-flex;padding:8px 11px;border:1px solid var(--line);border-radius:999px;color:#d6d6da;font-size:12px}
+.summary-card{border:1px solid var(--line);border-radius:26px;padding:26px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.018))}
+.summary-card .big{font-size:34px;font-weight:850;line-height:1.05}
+.summary-card p{font-size:14px;color:var(--muted);margin:10px 0 0}
+.detail-nav{padding:28px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+.detail-nav-grid{display:flex;gap:8px;flex-wrap:wrap}
+.detail-nav a{font-size:12px;color:#d7d7db;border:1px solid var(--line);border-radius:999px;padding:8px 11px}
+.detail-nav a:hover{background:var(--soft)}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0}
+.feature{padding:22px;border:1px solid var(--line);border-radius:20px;background:var(--card)}
+.feature .tag{font-size:10px;letter-spacing:.15em;color:var(--muted);font-weight:800}
+.feature h3{font-size:20px;margin:18px 0 10px}
+.feature p{font-size:14px;color:#bcbcc1;margin:0}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:24px 0}
+.panel{border:1px solid var(--line);border-radius:22px;padding:24px;background:rgba(255,255,255,.025)}
+.panel h3{margin:0 0 12px;font-size:21px}
+.panel p,.panel li{color:#c7c7cb}
+.flow{display:flex;align-items:stretch;gap:8px;flex-wrap:wrap;margin:26px 0}
+.flow .node{flex:1 1 150px;min-width:150px;border:1px solid var(--line);border-radius:18px;padding:18px;background:#111114}
+.flow .node b{display:block;margin-bottom:7px}
+.flow .node span{font-size:12px;color:var(--muted)}
+.flow .arrow{display:flex;align-items:center;color:#74747b;font-size:22px}
+.money-example{padding:26px;border:1px solid #44444b;border-radius:24px;background:linear-gradient(135deg,rgba(255,255,255,.07),rgba(255,255,255,.018));margin:26px 0}
+.money-example .number{font-size:42px;font-weight:850;letter-spacing:-.04em}
+.money-example small{color:var(--muted)}
+.clean-table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border:1px solid var(--line);border-radius:18px;margin:22px 0}
+.clean-table th,.clean-table td{padding:14px 15px;border-bottom:1px solid var(--line);vertical-align:top}
+.clean-table th{text-align:left;color:#fff;background:#151518;font-size:12px;letter-spacing:.04em}
+.clean-table td{color:#c9c9ce;font-size:14px}
+.clean-table tr:last-child td{border-bottom:0}
+.stage{display:grid;grid-template-columns:90px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}
+.stage:last-child{border-bottom:0}.stage .time{font-size:12px;color:var(--accent2);font-weight:800;letter-spacing:.1em}.stage h3{margin:0 0 7px}.stage p{margin:0;color:#c4c4c9}
+.callout{border-left:3px solid #f4f4f2;padding:18px 20px;margin:25px 0;background:rgba(255,255,255,.035);border-radius:0 16px 16px 0}
+.callout strong{color:#fff}.page-footer-note{margin-top:30px;color:#8f8f95;font-size:12px}
+@media(max-width:900px){.detail-hero-grid,.two-col{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr}.stage{grid-template-columns:1fr}}
+@media print{
+ .detail-nav{display:none!important}.detail-hero{padding:0 0 8mm!important}.detail-hero-grid{display:block!important}
+ .detail-hero h1{font-size:30pt!important;color:#000!important}.detail-hero p,.detail-badge{color:#111!important}.detail-badge{border-color:#888!important}
+ .summary-card,.feature,.panel,.money-example,.flow .node{background:#fff!important;color:#111!important;border-color:#aaa!important}
+ .feature p,.panel p,.panel li,.flow .node span,.stage p,.clean-table td{color:#111!important}
+ .feature-grid{grid-template-columns:repeat(2,1fr)!important}.two-col{grid-template-columns:1fr 1fr!important}
+ .clean-table th{background:#ededed!important;color:#000!important}.clean-table td{background:#fff!important}.flow .node{break-inside:avoid!important}
+}
+</style>
+<style id="ion-print-title-author-v13">
+.print-title-author{
+  display:none;
+}
+
+@media print{
+  .print-title-author{
+    display:block !important;
+    margin-top:12mm !important;
+    padding-top:5mm !important;
+    border-top:0.35mm solid #9a9a9f !important;
+    color:#111 !important;
+    background:#fff !important;
+    break-inside:avoid !important;
+    page-break-inside:avoid !important;
+  }
+
+  .print-title-author span{
+    display:block !important;
+    margin-bottom:2mm !important;
+    color:#555 !important;
+    font-size:8.5pt !important;
+    line-height:1.2 !important;
+    font-weight:800 !important;
+    letter-spacing:.14em !important;
+  }
+
+  .print-title-author strong{
+    display:block !important;
+    color:#000 !important;
+    font-size:12pt !important;
+    line-height:1.35 !important;
+    font-weight:750 !important;
+  }
+
+  /* На титульной странице авторство является частью документа,
+     поэтому оно не зависит от браузерных колонтитулов. */
+  .hero .print-title-author,
+  .detail-hero .print-title-author{
+    visibility:visible !important;
+    opacity:1 !important;
+    transform:none !important;
+  }
+}
+</style>
+
+</head><body>
+<header class="topbar"><div class="topbar-inner">
+<a class="brand" href="index.html"><img src="assets/ion-logo.png" alt="ION"><span>ION ENERGY<small>TRANSFORMATION</small></span></a>
+<nav class="page-nav"><a class="" href="index.html">Стратегия</a><a class="" href="superapp.html">SuperApp</a><a class="active" href="ion-invest.html">ION Invest</a></nav>
+<div class="print-actions"><button class="print" type="button" onclick="window.print()">PDF / ПЕЧАТЬ</button></div>
+</div></header><main>
+<section class="detail-hero"><div class="wrap detail-hero-grid"><div><span class="detail-badge">INVESTMENT / REWARDS / PAYMENTS</span><h1>ION Invest</h1><p>Отдельный финансовый контур: ION Share, ION Unit, инвестиционная рефералка, автоматическая конвертация в KZT и понятная экономика для всей группы.</p>
+<div class="print-title-author">
+  <span>АВТОР</span>
+  <strong>Проектный менеджер Нурмахан А.</strong>
+</div>
+</div>
+<aside class="summary-card"><span class="kicker">ГЛАВНАЯ ЗАДАЧА</span><div class="big">Reward → Investment → Spend</div><p>Инвестиционный reward должен удерживать клиента и возвращать его в Fuel, Store и Drive.</p></aside></div></section>
+
+<section class="detail-nav"><div class="wrap detail-nav-grid"><a href="#model">Модель</a><a href="#layers">Share / Unit / Pay</a><a href="#referral">Referral</a><a href="#pay">Оплата ION</a><a href="#moneyflow">Путь денег</a><a href="#economics">Выгода</a><a href="#market">Биржа</a><a href="#before-after">Roadmap</a><a href="#gates">Legal Gates</a></div></section>
+<section class="section" id="model"><div class="wrap"><div class="section-head"><span class="eyebrow">01 / КОНЦЕПЦИЯ</span><h2>ION Invest превращает loyalty в инвестиционный актив</h2></div><div class="prose"><p>Пользователь получает ION как инвестиционный reward, может держать его, покупать дополнительно и при необходимости автоматически превратить в тенге для оплаты сервисов ION.</p><blockquote><strong>Клиент видит ION.</strong> Под ним работает регулируемый финансовый инструмент, брокерская инфраструктура и KZT settlement.</blockquote></div></div></section>
+<section class="section" id="layers"><div class="wrap"><div class="section-head"><span class="eyebrow">02 / ТРИ СЛОЯ</span><h2>Акция, ION Unit и деньги — разные вещи</h2></div><div class="feature-grid"><div class="feature"><span class="tag">PUBLIC EQUITY</span><h3>ION Share</h3><p>Настоящая публичная акция ION ENERGY после листинга.</p></div><div class="feature"><span class="tag">INVESTMENT</span><h3>ION Unit</h3><p>Пользовательское название отдельной ION-linked ETN/инвестиционной единицы, связанной с ION Share по условиям выпуска.</p></div><div class="feature"><span class="tag">MONEY</span><h3>ION Pay</h3><p>KZT-слой: продавец получает тенге, а не обязан принимать ценную бумагу.</p></div></div><div class="callout"><strong>ION Unit не делает пользователя прямым акционером автоматически.</strong> Это отдельный инструмент.</div></div></section>
+<section class="section" id="referral"><div class="wrap"><div class="section-head"><span class="eyebrow">03 / REFERRAL</span><h2>Как рефералка становится ION Unit</h2></div><div class="flow"><div class="node"><b>Referral</b><span>приглашение</span></div><div class="arrow">→</div><div class="node"><b>Qualified Event</b><span>заправка / покупка / аренда</span></div><div class="arrow">→</div><div class="node"><b>Reward Value</b><span>например 1 000 ₸</span></div><div class="arrow">→</div><div class="node"><b>ION Unit</b><span>по текущей котировке</span></div><div class="arrow">→</div><div class="node"><b>Wallet</b><span>держать / купить / потратить</span></div></div><div class="money-example"><small>ПРИМЕР</small><div class="number">1 000 ₸ reward</div><p>Если 1 ION = 1,25 ₸, пользователь получает 800 ION. Дальше стоимость его позиции меняется вместе с котировкой инструмента.</p></div></div></section>
+<section class="section" id="pay"><div class="wrap"><div class="section-head"><span class="eyebrow">04 / PAY WITH ION</span><h2>Клиент нажимает одну кнопку — система сама получает тенге</h2></div><div class="money-example"><small>ПОКУПКА ТОПЛИВА</small><div class="number">12 000 ₸</div><p>Если 1 ION = 1,20 ₸, для оплаты требуется 10 000 ION.</p></div><div class="flow"><div class="node"><b>10 000 ION</b><span>актив клиента</span></div><div class="arrow">→</div><div class="node"><b>Execution</b><span>продажа / погашение</span></div><div class="arrow">→</div><div class="node"><b>12 000 KZT</b><span>денежный результат</span></div><div class="arrow">→</div><div class="node"><b>ION Pay</b><span>settlement</span></div><div class="arrow">→</div><div class="node"><b>ION АЗС</b><span>12 000 ₸ выручки</span></div></div><div class="callout"><strong>АЗС получает KZT.</strong> ION Unit только служит инвестиционным источником стоимости для платежа.</div></div></section>
+<section class="section" id="moneyflow"><div class="wrap"><div class="section-head"><span class="eyebrow">05 / ПУТЬ ДЕНЕГ</span><h2>Почему это не две одинаковые прибыли</h2></div><table class="clean-table"><thead><tr><th>Шаг</th><th>Что происходит</th><th>Экономический смысл</th></tr></thead><tbody><tr><td>1</td><td>Клиент владеет ION Unit.</td><td>Это актив клиента.</td></tr><tr><td>2</td><td>Unit продается / погашается.</td><td>Появляются KZT для расчета.</td></tr><tr><td>3</td><td>KZT оплачивают бензин.</td><td>Дочка АЗС получает выручку.</td></tr><tr><td>4</td><td>Из выручки вычитаются себестоимость и расходы.</td><td>Остается маржа АЗС.</td></tr><tr><td>5</td><td>Результат входит в группу.</td><td>АО получает экономическую выгоду через прибыль/стоимость группы, а не вторую копию тех же денег.</td></tr></tbody></table><div class="money-example"><small>ПРОСТОЙ ПРИМЕР</small><div class="number">12 000 ₸ выручки</div><p>Если прямые затраты составили 10 500 ₸, валовая маржа АЗС — 1 500 ₸. Продажа Unit не создает автоматически еще 12 000 ₸ прибыли для материнского АО.</p></div></div></section>
+<section class="section" id="economics"><div class="wrap"><div class="section-head"><span class="eyebrow">06 / ЭКОНОМИКА</span><h2>Где группа реально зарабатывает</h2></div><div class="feature-grid"><div class="feature"><span class="tag">FUEL</span><h3>Маржа АЗС</h3><p>После конвертации KZT возвращаются в наш топливный оборот.</p></div><div class="feature"><span class="tag">STORE</span><h3>Marketplace fee</h3><p>ION получает комиссию с покупки партнера.</p></div><div class="feature"><span class="tag">DRIVE</span><h3>Rental fee</h3><p>ION получает платформенную комиссию.</p></div><div class="feature"><span class="tag">RETENTION</span><h3>Возврат клиента</h3><p>Reward остается в Wallet и создает повод снова открыть ION.</p></div><div class="feature"><span class="tag">CROSS-SELL</span><h3>Внутренний цикл</h3><p>Fuel → Store → Drive → Fuel.</p></div><div class="feature"><span class="tag">FINANCIAL</span><h3>Отдельные fees</h3><p>Возможны только если прямо предусмотрены договорами и регулируемой структурой.</p></div></div><div class="callout"><strong>Обычная вторичная продажа существующей бумаги не является новой выручкой ION ENERGY.</strong></div></div></section>
+<section class="section" id="market"><div class="wrap"><div class="section-head"><span class="eyebrow">07 / CAPITAL MARKETS</span><h2>Как ION Invest связан с публичным рынком</h2></div><div class="flow"><div class="node"><b>ION ENERGY АО</b><span>публичная компания</span></div><div class="arrow">→</div><div class="node"><b>ION Share</b><span>котировка</span></div><div class="arrow">→</div><div class="node"><b>SPC / Issuer</b><span>структура Unit</span></div><div class="arrow">→</div><div class="node"><b>ION-linked ETN</b><span>отдельная бумага</span></div><div class="arrow">→</div><div class="node"><b>ION Wallet</b><span>UX</span></div></div><div class="two-col"><div class="panel"><h3>Первичный рынок</h3><p>Когда эмитент размещает новые акции, привлеченный капитал может поступить компании по условиям размещения.</p></div><div class="panel"><h3>Вторичный рынок</h3><p>Когда инвесторы торгуют уже существующими бумагами между собой, деньги идут продавцу, а не автоматически эмитенту.</p></div></div></div></section>
+<section class="section" id="before-after"><div class="wrap"><div class="section-head"><span class="eyebrow">08 / ROADMAP</span><h2>До IPO проверяем механику, после IPO создаем полноценный ION-linked слой</h2></div><div class="stage"><div class="time">ДО IPO</div><div><h3>ION Rewards</h3><p>Обычная loyalty-механика для проверки referral, fraud и поведения клиентов.</p></div></div><div class="stage"><div class="time">IPO</div><div><h3>ION Share</h3><p>Появляется публичная акция и рыночная котировка.</p></div></div><div class="stage"><div class="time">ПОСЛЕ IPO</div><div><h3>ION Unit</h3><p>Issuer/SPC, offering documents, broker, custody/depository, market maker/liquidity.</p></div></div><div class="stage"><div class="time">SCALE</div><div><h3>Pay with ION</h3><p>Referral → Unit, cashback → Unit, самостоятельная покупка и оплата Fuel / Store / Drive.</p></div></div></div></section>
+<section class="section" id="gates"><div class="wrap"><div class="section-head"><span class="eyebrow">09 / LEGAL GATES</span><h2>Что обязательно решить до production</h2></div><table class="clean-table"><thead><tr><th>Вопрос</th><th>Что фиксируем</th></tr></thead><tbody><tr><td>Issuer</td><td>Кто выпускает инструмент.</td></tr><tr><td>Underlying</td><td>Как Unit связан с ION Share.</td></tr><tr><td>Reserve / Hedge</td><td>Как управляется exposure и ликвидность.</td></tr><tr><td>Exchange</td><td>Где обращается инструмент.</td></tr><tr><td>Broker / Custody</td><td>Где учитываются права клиента.</td></tr><tr><td>Market maker</td><td>Кто обеспечивает ликвидность.</td></tr><tr><td>Pay with ION</td><td>Quote, execution, fees/spread, settlement, возвраты.</td></tr><tr><td>Tax / Accounting</td><td>Налоги и учет reward, продажи и расчетов компаний группы.</td></tr></tbody></table><div class="page-footer-note">Финальная конструкция утверждается только после юридической, налоговой, брокерской и биржевой проработки.</div></div></section>
+</main>
+<footer class="footer"><div class="wrap footer-row"><div><strong style="color:#fff">ION ENERGY</strong><br>Energy · Mobility · Technology · Capital Markets</div><img src="assets/ion-logo.png" alt="ION"></div></footer>
+<div class="print-author-footer" aria-hidden="true">Автор: Проектный менеджер Нурмахан А.</div></body></html>
